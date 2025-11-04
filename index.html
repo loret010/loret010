@@ -4,9 +4,98 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home</title>
-  <link rel="stylesheet" href="./Home_files/style.css">
+  <link rel="stylesheet" href="/home_assets/style.css">
 
-  <script src="./Home_files/jquery.min.js.download"></script>
+  <script src="/home_assets/jquery.min.js.download"></script>
+  <script>
+    $(document).ready(function () {
+      $("#imageModal").css("display", "none");
+
+      $(".scroll-button").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+
+          var hash = this.hash;
+
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            1000,
+            function () {
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+
+      $(".portfolio img").on("click", function () {
+        $("#fullImage").attr("src", this.src);
+        $("#imageModal").css("display", "flex");
+      });
+
+      $(".close").on("click", function () {
+        $("#imageModal").css("display", "none");
+      });
+
+      $(window).on("beforeunload", function () {
+        $("#imageModal").css("display", "none");
+      });
+    });
+  </script>
+<style>undefined</style></head>
+
+<body>
+  <header class="header">
+    <a href="index.html" class="logo">loret010</a>
+
+    <nav class="navbar">
+      <a href="" class="active">Home</a>
+      <a href="">About/Portfolio</a>
+    </nav>
+  </header>
+  <section class="home">
+    <div class="home-content">
+      <h1>Hi, I'm Lorenzo</h1>
+      <h3>He/Him, Web Developer and Discord Bot Developer</h3>
+    </div>
+    <img id="ava-img" src="/home_assets/pfp.png" alt="profile">
+  </section>
+
+
+  <section class="portfolio" id="portfolio">
+    <img src="/home_assets/" alt="N/A">
+    <img src="/home_assets/" alt="N/A">
+    <img src="/home_assets/" alt="N/A">
+    <img src="/home_assets/" alt="N/A">
+    <img src="/home_assets/" alt="N/A">
+    <img src="/home_assets/" alt="N/A">
+    <img src="/home_assets/" alt="N/A">
+    <img src="/home_assets/" alt="N/A">
+    <img src="/home_assets/" alt="N/A">
+    <img src="/home_assets/" alt="N/A">
+    <img src="/home_assets/" alt="N/A">
+    <img src="/home_assets/" alt="N/A">
+    <img src="/home_assets/" alt="N/A">
+    <img src="/home_assets/" alt="N/A">
+    <img src="/home_assets/" alt="N/A">
+    <img src="/home_assets/" alt="N/A">
+</section>
+
+<div id="imageModal" class="modal" style="display: none;">
+  <span class="close">×</span>
+  <img class="modal-content" id="fullImage">
+</div>
+
+
+</body></html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="/home_assets/style.css">
+
+  <script src="/home_assets/jquery.min.js.download"></script>
   <script>
     $(document).ready(function () {
       $("#imageModal").css("display", "none");
@@ -89,3 +178,4 @@
 
 
 </body></html>
+
