@@ -3,10 +3,6 @@
 
  👀 I’m interested in programming and web development in general. And ofc, gaming.
 
- 🌱 I’m currently learning Web Animations.
-
- 💞️ I’m looking to collaborate on N/A
-
- 📫 How to reach me: @loret010 on Discord
+ 📫 How to reach me: @loret010 on Discord (you can also find me on Instagram but that's usually for friends and family)
 
  🌐 I speak English and Italian.
